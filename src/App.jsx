@@ -131,10 +131,6 @@ function App() {
     const formattedTime = formatTime(time);
     const validTime = /^(0[1-9]|1[0-2]):[0-5]\d (AM|PM)$/;
 
-    if (!validTime.test(formattedTime)) {
-      alert('Please enter a valid time, like 7:00 AM or 06:30 PM.');
-      return;
-    }
 
     setTime(formattedTime);
     setSent(true);
